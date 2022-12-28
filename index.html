@@ -13,7 +13,22 @@
             <h1>Test Your Javascript Knowledge</h1>
         </header>
         <main>
-            <div class="outercontainer" id="quizbox"></div>
+            <br>
+            <!-- <button type="button" id="startbutton">Start Quiz</button> -->
+            <h2 id="startbutton">Start</h2>
+            <br>
+            <div class="outercontainer" id="quizbox">
+                <h2 class="subheader" id="question"></h2>
+                <p class="answerchoice" id="achoice"></p>
+                <p class="answerchoice" id="bchoice"></p>
+                <p class="answerchoice" id="cchoice"></p>
+                <p class="answerchoice" id="dchoice"></p>
+                <button type="button" id="nextquestion" style="display:none">Next Question</button>
+            </div>
+            <div class="outercontainer" id="results" style="display:none">
+                <h2 class="subheader">Quiz Complete</h2>
+                <p>Your score: <span id="userScore"></span>/10</p>
+            </div>
         </main>
         <script src="./assets/js/script.js"></script>
     </body>
