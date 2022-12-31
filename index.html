@@ -10,13 +10,12 @@
     </head>
     <body>
         <header>
-            <h1>Test Your Javascript Knowledge</h1>
+            <h1>Test Your Javascript Knowledge!</h1>
         </header>
         <main>
-            <br>
-            <h2>Time Left: <span id="minutehand">5</span>:<span id="secondhand">00</span></h2>
-            <!-- <button type="button" id="startbutton">Start Quiz</button> -->
-            <h2 id="startbutton">Start</h2>
+            <h2 class="timer">Time Left: <span id="minutehand">5</span>:<span id="secondhand">00</span></h2>
+            <p class="instructions">The quiz is 10 questions. You have 5 minutes to finish, with 30 seconds subtracted for each wrong answer. Good luck!</p>
+            <h2 class="button" id="startbutton">Start</h2>
             <br>
             <div class="outercontainer" id="quizbox" style="display:none">
                 <h2 class="subheader" id="question"></h2>
@@ -24,21 +23,26 @@
                 <p class="answerchoice" id="bchoice" data-choice="b"></p>
                 <p class="answerchoice" id="cchoice" data-choice="c"></p>
                 <p class="answerchoice" id="dchoice" data-choice="d"></p>
-                <button type="button" id="nextquestion" style="display:none">Next Question</button>
+                <br>
+                <h2 class="button" id="nextquestion">Next Question</h2>
             </div>
             <div class="outercontainer" id="results" style="display:none">
                 <h2 class="subheader">Quiz Complete</h2>
                 <p>Your score: <span id="userScore"></span>/10</p>
-                <h3 id="replay">Play again?</h3>
+                <br>
+                <h3 class="button" id="replay">Play again?</h3>
+                <br>
                 <form>
                     <label for="initials">Enter your initials to save your score:</label>
                     <input type="text" id="initials">
-                    <button id="savebutton">Save Score</button>
+                    <h3 class="button" id="savebutton">Save Score</h3>
                 </form>
-                <h3>Scoreboard</h3>
+                <br>    
+                <h3 class="subheader">Scoreboard</h3>
                 <ul id="scoreboard"></ul>
             </div>
         </main>
+        <footer></footer>
         <script src="./assets/js/script.js"></script>
     </body>
 </html>
