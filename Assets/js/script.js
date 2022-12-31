@@ -133,6 +133,8 @@ quizBox.addEventListener("click", function(event) {
         if (answer === allQuestions[onQuestion].r) {
             thisAnswer = true;
         }
+        answerBoxReset();
+        selection.setAttribute("style", "background-color:whitesmoke; color:purple");
     }
 })
 
@@ -193,8 +195,16 @@ saveButton.addEventListener("click", function(event) {
 function quizInit() {
     nextButton.setAttribute("style", "display:inline-block");
     quizBox.setAttribute("style", "display:block");
+    startButton.setAttribute("style", "display:none");
     nextQuestion();
     countDown();
+}
+
+function answerBoxReset() {
+    achoice.setAttribute("style", "background-color:rgb(34,34,34)");
+    bchoice.setAttribute("style", "background-color:rgb(34,34,34)");
+    cchoice.setAttribute("style", "background-color:rgb(34,34,34)");
+    dchoice.setAttribute("style", "background-color:rgb(34,34,34)");
 }
 
 // timer function (minutes + seconds), with time-out consequence
@@ -249,6 +259,7 @@ function renderScoreboard() {
 // populates quiz section of the page with a specified quiz question and answer choices
 function nextQuestion() {
     let currentQuestion = allQuestions[onQuestion];
+    answerBoxReset();
     qcontainer.textContent = currentQuestion.q;
     achoice.textContent = "A) " + currentQuestion.a;
     bchoice.textContent = "B) " + currentQuestion.b;

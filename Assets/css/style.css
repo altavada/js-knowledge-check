@@ -1,0 +1,154 @@
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+}
+
+body {
+    background-color: rgb(34, 34, 34);
+}
+
+header {
+    background-color: darkred;
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    text-shadow: 5px 5px 6px black;
+    line-height: 1.5;
+}
+
+main {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer {
+    margin-bottom: 20px;
+
+}
+
+.instructions {
+    text-align: center;
+    font-weight: 500;
+    font-size: smaller;
+    border-top: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.button {
+    text-align: center;
+    padding: 8px;
+    border: 2px solid white;
+    border-radius: 4px;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: whitesmoke;
+    color:rgb(34, 34, 34);
+}
+
+#replay {
+    width: 150px;
+}
+
+#savebutton {
+    width: 150px;
+}
+
+.outercontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px dashed white;
+    border-radius: 10px;
+    padding: 2%;
+    max-width: 70%;
+}
+
+.subheader {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.answerchoice {
+    padding: 10px;
+    cursor: pointer;
+    line-height: 1.3;
+}
+
+.answerchoice:hover {
+    border: 1px solid whitesmoke;
+    padding: 9px;
+    color: rgb(189, 87, 189);
+}
+
+form {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+label, input {
+margin-bottom: 15px;
+}
+
+input {
+    display: block;
+    margin-top: 5px;
+}
+
+#results .subheader {
+    text-decoration: underline;
+}
+
+ul {
+    line-height: 1.5;
+    padding-left: 10px;
+}
+
+footer {
+    height: 75px;
+}
+
+@media screen and (max-width: 578px) {
+    #question {
+        font-size: 14px;
+    }
+    .outercontainer {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    #question {
+        font-size: 12px;
+    }
+    .answerchoice {
+        font-size: 14px;
+    }
+    .outercontainer {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 337px) {
+    .outercontainer {
+        max-width: 96%;
+    }
+    #question {
+        font-size: 11px;
+    }
+    .answerchoice {
+        font-size: 12px;
+    }
+}
