@@ -13,7 +13,31 @@
             <h1>Test Your Javascript Knowledge</h1>
         </header>
         <main>
-            <div class="outercontainer" id="quizbox"></div>
+            <br>
+            <h2>Time Left: <span id="minutehand">5</span>:<span id="secondhand">00</span></h2>
+            <!-- <button type="button" id="startbutton">Start Quiz</button> -->
+            <h2 id="startbutton">Start</h2>
+            <br>
+            <div class="outercontainer" id="quizbox" style="display:none">
+                <h2 class="subheader" id="question"></h2>
+                <p class="answerchoice" id="achoice" data-choice="a"></p>
+                <p class="answerchoice" id="bchoice" data-choice="b"></p>
+                <p class="answerchoice" id="cchoice" data-choice="c"></p>
+                <p class="answerchoice" id="dchoice" data-choice="d"></p>
+                <button type="button" id="nextquestion" style="display:none">Next Question</button>
+            </div>
+            <div class="outercontainer" id="results" style="display:none">
+                <h2 class="subheader">Quiz Complete</h2>
+                <p>Your score: <span id="userScore"></span>/10</p>
+                <h3 id="replay">Play again?</h3>
+                <form>
+                    <label for="initials">Enter your initials to save your score:</label>
+                    <input type="text" id="initials">
+                    <button id="savebutton">Save Score</button>
+                </form>
+                <h3>Scoreboard</h3>
+                <ul id="scoreboard"></ul>
+            </div>
         </main>
         <script src="./assets/js/script.js"></script>
     </body>
