@@ -128,7 +128,7 @@ footer {
         max-width: 80%;
     }
 }
-
+    
 @media screen and (max-width: 440px) {
     #question {
         font-size: 12px;
