@@ -172,6 +172,7 @@ replay.addEventListener("click", function() {
     minutesLeft = 5;
     resultBox.setAttribute("style", "display:none");
     nextButton.textContent = "Next Question";
+    saveButton.setAttribute("style", "display:block");
     quizInit(); 
 })
 
@@ -189,6 +190,7 @@ saveButton.addEventListener("click", function(event) {
         scoreRecord.push(yourScore);
         initials.value = "";
         localStorage.setItem("scoreRecord", JSON.stringify(scoreRecord));
+        saveButton.setAttribute("style", "display:none");
         renderScoreboard();
     }
 })
