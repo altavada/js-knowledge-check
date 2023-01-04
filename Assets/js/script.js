@@ -41,11 +41,11 @@ var questions = {
         r: "b"
     },
     question1: {
-        q: '2. Which of the following most accurately describes "shadowing?"',
+        q: '2. Which of the following most accurately describes an instance of "shadowing?"',
         a: "When the execution of two functions conflicts; the first function called overrides the second.",
         b: "When the execution of two functions conflicts; the second function called overrides the first.",
-        c: "When a global and local variable share the same name; the function will read the local variable and ignore the global one.",
-        d: "When a global and local variable share the same name; the function will read the global variable and ignore the local one.",
+        c: "When a global variable shares the same name as a local variable in a function; the function will read the local variable and ignore the global one.",
+        d: "When a global variable shares the same name as a local variable in a function; the function will read the global variable and ignore the local one.",
         r: "c"
     },
     question2: {
