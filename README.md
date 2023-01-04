@@ -8,7 +8,7 @@ In this case, our quiz subject is basic JavaScript and the test consists of 10 q
 
 When the last question is reached, the "next question" button becomes a "finish quiz" button, which submits when pressed submits the final answer and brings the user to a results card with their score, an option to save that score next to their initials via the browser's local storage, and a scoreboard displaying any previously saved scores. If the timer runs out before the final question is answered, the quiz automatically ends and brings the user to the results card, with a window alert notifying that their time is up. The results card also contains a "replay" button that resets the timer and status indicators, and restarts the quiz.
 
-The page utilizes a simple but responsive layout with the wide-set Verdana typeface, aiming for clear readability and mobile accessibility. ![Sample screenshot of deployed site](./assets/images/sample.png)
+The page utilizes a simple but responsive layout with the wide-set Verdana typeface, aiming for clear readability and mobile accessibility. ![Sample screenshot of deployed site](./Assets/images/sample.png)
 
 ## Installation
 
