@@ -1,4 +1,4 @@
-# refactor-project
+# JavaScript Knowledge Check
 
 ## Description
 
