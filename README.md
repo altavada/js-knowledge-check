@@ -1,99 +1,27 @@
-# 04 Web APIs: Code Quiz
+# refactor-project
 
-## Your Task
+## Description
 
-At some point in your journey to become a full-stack web developer, you’ll likely be asked to complete a coding assessment&mdash;perhaps as part of an interview process. A typical coding assessment includes both multiple-choice questions and interactive coding challenges. 
+This project is an originally-coded model for a simple online quiz. It demonstrates JavaScript's ability to create and manipulate HTML elements using the Document Object Model (DOM) and save/retrieve data from local storage with JavaScript Object Notation (JSON).
 
-To help familiarize you with these tests and allow you to use the skills covered in this module, this Challenge invites you to build a timed coding quiz with multiple-choice questions. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface. 
+In this case, our quiz subject is basic JavaScript and the test consists of 10 questions, however the length and subject matter can be readily altered without rewriting the code itself. When the start button is clicked, a timer begins running near the top of the page, and 30 seconds are subtracted each time an incorrect answer is submitted. For the purposes of our 10-question quiz here, the initial time allotted is 5 minutes, but this can reduce drastically if the quiz taker isn't careful or studied-up on their JS knowledge! However, the user is able to click any answer on a given question freely while working on a question, and the selected answer (or lack thereof) is only locked in when the "next question" button is clicked. 
 
-This week’s coursework will equip you with all the skills you need to succeed in this assignment.
+When the last question is reached, the "next question" button becomes a "finish quiz" button, which submits when pressed submits the final answer and brings the user to a results card with their score, an option to save that score next to their initials via the browser's local storage, and a scoreboard displaying any previously saved scores. If the timer runs out before the final question is answered, the quiz automatically ends and brings the user to the results card, with a window alert notifying that their time is up. The results card also contains a "replay" button that resets the timer and status indicators, and restarts the quiz.
 
-## User Story
+The page utilizes a simple but responsive layout with the wide-set Verdana typeface, aiming for clear readability and mobile accessibility. ![Sample screenshot of deployed site](./assets/images/sample.png)
 
-```
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-```
+## Installation
 
-## Acceptance Criteria
+N/A
 
-```
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and my score
-```
+## Usage
 
-## Mock-Up
+The hope is for this application to be as simple as navigating to the page and clicking "Start." The cues follow from there. As a learning tool, it should look and feel more or less as simple as taking a pencil-and-paper quiz in a classroom. Notably, however, submitted answers cannot be undone! To view the deployed page, [click here](https://altavada.github.io/js-knowledge-check/).
 
-The following animation demonstrates the application functionality:
+## Credits
 
-![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](./Assets/04-web-apis-homework-demo.gif)
+[This StackOverflow thread](https://stackoverflow.com/questions/37077617/javascript-store-multiple-objects-in-array-and-access-their-properties-via) gave me the idea for an elegant means of organizing and reading the content and answer key of each quiz question.
 
-## Grading Requirements
+## License
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
-
-This Challenge is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the preceding acceptance criteria.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the Challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
----
-
-© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+Refer to license in the repo.

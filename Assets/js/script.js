@@ -153,6 +153,9 @@ nextButton.addEventListener("click", function() {
     }
     onQuestion++;
     thisAnswer = false;
+    if (onQuestion + 1 === allQuestions.length) {
+        nextButton.textContent = "Finish Quiz";
+    }
     if (onQuestion === allQuestions.length) {
         showScore();
     } else {
@@ -168,6 +171,7 @@ replay.addEventListener("click", function() {
     secondsLeft = 0;
     minutesLeft = 5;
     resultBox.setAttribute("style", "display:none");
+    nextButton.textContent = "Next Question";
     quizInit(); 
 })
 
